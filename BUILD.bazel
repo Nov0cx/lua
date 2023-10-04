@@ -1,0 +1,7 @@
+cc_library(
+    name = "lua",
+    srcs = glob(["**/*.c"]),
+    hdrs = glob(["**/*.h", "**/*.hpp"]),
+    strip_include_prefix = "src",
+    visibility = ["//visibility:public"],
+)
